@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClassConnect</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+  <header class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <div class="text-2xl font-serif">ClassConnect</div>
+      <nav class="hidden md:flex space-x-4">
+        <a href="#" class="hover:text-gray-200">Home</a>
+        <a href="#subjects" class="hover:text-gray-200">Subjects</a>
+        <a href="#materials" class="hover:text-gray-200">Materials</a>
+        <a href="#quizzes" class="hover:text-gray-200">Quizzes</a>
+        <a href="#profile" class="hover:text-gray-200">Profile</a>
+        <a href="#logout" class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded">Logout</a>
+      </nav>
+      <div class="md:hidden flex items-center">
+        <button id="menu-toggle" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden bg-blue-600 text-white py-2 hidden">
+      <a href="#" class="block px-4 py-2 hover:bg-blue-700">Home</a>
+      <a href="#subjects" class="block px-4 py-2 hover:bg-blue-700">Subjects</a>
+      <a href="#materials" class="block px-4 py-2 hover:bg-blue-700">Materials</a>
+      <a href="#quizzes" class="block px-4 py-2 hover:bg-blue-700">Quizzes</a>
+      <a href="#profile" class="block px-4 py-2 hover:bg-blue-700">Profile</a>
+      <a href="#logout" class="block px-4 py-2 bg-green-500 hover:bg-green-700 rounded">Logout</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-white py-16">
+      <div class="container mx-auto text-center px-4">
+        <h1 class="text-4xl font-serif text-blue-600 mb-4">Welcome to ClassConnect</h1>
+        <p class="text-gray-700 mb-8">Your gateway to educational resources and quizzes</p>
+        <a href="#subjects" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">Get Started</a>
+      </div>
+    </section>
+
+    <section id="subjects" class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-serif text-blue-600 mb-8 text-center">Popular Subjects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-xl font-bold mb-2">Mathematics</h3>
+            <p class="text-gray-700">Explore various mathematical concepts and improve your problem-solving skills.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-xl font-bold mb-2">Science</h3>
+            <p class="text-gray-700">Discover the wonders of science through interactive lessons and experiments.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-xl font-bold mb-2">History</h3>
+            <p class="text-gray-700">Dive into the past and learn about historical events and figures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="materials" class="bg-white py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-serif text-blue-600 mb-8 text-center">Featured Materials</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-xl font-bold mb-2">Algebra Textbook</h3>
+            <p class="text-gray-700">A comprehensive guide to understanding algebraic concepts.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-xl font-bold mb-2">Physics Experiments</h3>
+            <p class="text-gray-700">Hands-on experiments to grasp the fundamentals of physics.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-xl font-bold mb-2">World History</h3>
+            <p class="text-gray-700">An in-depth look at significant events and their impact on the world.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quizzes" class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-serif text-blue-600 mb-8 text-center">Quizzes and Challenges</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-xl font-bold mb-2">Math Quiz</h3>
+            <p class="text-gray-700">Test your math skills with this comprehensive quiz.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-xl font-bold mb-2">Science Quiz</h3>
+            <p class="text-gray-700">Challenge your knowledge of scientific concepts and theories.</p>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-xl font-bold mb-2">History Quiz</h3>
+            <p class="text-gray-700">Assess your understanding of historical events and figures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto text-center">
+      &copy; 2019 ClassConnect. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
